@@ -1374,6 +1374,13 @@ main:after {
   width: calc(100% + 30px);
   margin-left: -15px;
 }
+@media (max-width: 1800px) {
+  .info-items-wrap .info-items {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .info-items-wrap .info-items .info-item {
   display: -webkit-box;
   display: -ms-flexbox;
