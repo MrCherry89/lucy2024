@@ -253,7 +253,10 @@
       @include align-center;
       @include justify-center;
       margin: 0 15px 30px;
-      @media (max-width: 767px) {
+      @media (max-width: 1800px) {
+        width: calc((100% - 120px) / 4);
+      }
+      @media (max-width: 1024px) {
         width: calc(50% - 30px);
       }
       &.active {
@@ -577,7 +580,7 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: -1;
-        @media (max-width: 767px) {
+        @media (max-width: 1024px) {
           width: 100%;
         }
       }

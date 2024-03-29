@@ -317,6 +317,10 @@ main {
       &.archive-mobile {
         padding-top: 170px;
       }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
     }
     .archive {
       @include inline-flex;
@@ -755,6 +759,10 @@ main {
       top: 0;
       right: -60px;
       z-index: 1;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
       @media (max-width: 1920px) {
         right: -87px;
         width: 750px;
@@ -769,6 +777,28 @@ main {
       }
       @media (max-width: 767px) {
         display: none;
+      }
+      &.lucy2-img {
+        top: 25px;
+        right: 65px;
+        @media (max-width: 1920px) {
+          right: 10px;
+          width: 360px;
+          top: 20px;
+        }
+        @media (max-width: 1400px) {
+          right: 50px;
+          width: 240px;
+          top: 10px;
+        }
+        @media (max-width: 1024px) {
+          right: -35px;
+          width: 210px;
+          top: 20px;
+        }
+        @media (max-width: 767px) {
+          display: none;
+        }
       }
     }
   }
