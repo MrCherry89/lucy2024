@@ -18,6 +18,7 @@ $(document).ready(function () {
 
   $(".read").on("click", function () {
     $(this).closest(".item-bottom").find(".hide-info").toggleClass("open");
+    $(this).closest(".item-bottom").find(".hide-info").toggleClass("visible");
     $(this).find("svg").toggleClass("rotate");
     if (!$(this).closest(".item-bottom").find(".hide-info").hasClass("open")) {
       $(this).find("span").text("читать");
@@ -45,6 +46,29 @@ $(document).ready(function () {
     if (
       $(this).closest(".archive-item").find(".item-bottom").hasClass("open")
     ) {
+      $(this).find(".img").addClass("after");
+      $(this).find(".img").removeClass("before");
+    } else {
+      $(this).find(".img").addClass("before");
+      $(this).find(".img").removeClass("after");
+    }
+    return false;
+  });
+
+  $(".album-btn2").on("click", function () {
+    $(this).closest(".poem-item").find(".item-bottom").toggleClass("open");
+    if (!$(this).closest(".poem-item").find(".item-bottom").hasClass("open")) {
+      $(this).find("span").text("посмотреть сборник");
+      $(this).closest(".poem-item").find(".item-top").removeClass("bg");
+    } else {
+      $(this).find("span").text("свернуть сборник");
+      $(this).closest(".poem-item").find(".item-top").addClass("bg");
+    }
+    return false;
+  });
+
+  $(".album-btn2").on("click", function () {
+    if ($(this).closest(".poem-item").find(".item-bottom").hasClass("open")) {
       $(this).find(".img").addClass("after");
       $(this).find(".img").removeClass("before");
     } else {
