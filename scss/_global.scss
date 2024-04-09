@@ -143,6 +143,11 @@ main {
       content: none;
     }
   }
+  &.no-bg {
+    &:after {
+      content: none;
+    }
+  }
 }
 
 .mfp-fade.mfp-bg {
@@ -847,7 +852,7 @@ main {
       height: 640px;
     }
     @media (max-width: 1024px) {
-      height: 550px;
+      height: 700px;
     }
     @media (max-width: 767px) {
       height: 100vw;
@@ -873,10 +878,6 @@ main {
         width: 400px;
       }
       @media (max-width: 1024px) {
-        width: 300px;
-        right: -100px;
-      }
-      @media (max-width: 767px) {
         display: none;
       }
     }
@@ -902,31 +903,27 @@ main {
         left: 0vw;
       }
       @media (max-width: 1024px) {
-        width: 760px;
-        left: 6vw;
-      }
-      @media (max-width: 767px) {
         display: none;
       }
     }
     .left-img-mobile {
       display: none;
-      @media (max-width: 767px) {
+      @media (max-width: 1024px) {
         display: inline-block;
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 60vw;
+        width: 45vw;
       }
     }
     .right-img-mobile {
       display: none;
-      @media (max-width: 767px) {
+      @media (max-width: 1024px) {
         display: inline-block;
         position: absolute;
         bottom: 0;
         right: 0;
-        width: 30vw;
+        width: 25vw;
       }
     }
     &:before {
@@ -942,8 +939,7 @@ main {
       left: 0;
       z-index: 0;
       @media (max-width: 1024px) {
-        height: 40px;
-        bottom: -34px;
+        display: none;
       }
     }
     &:after {
@@ -962,7 +958,7 @@ main {
         height: 640px;
       }
       @media (max-width: 1024px) {
-        height: 550px;
+        height: 700px;
       }
       @media (max-width: 767px) {
         height: 100vw;
@@ -995,12 +991,26 @@ main {
           left: -390px;
           top: 50px;
         }
-        @media (max-width: 1024px) {
-          width: 1100px;
-          height: 740px;
-          left: -350px;
-        }
 
+        @media (max-width: 1024px) {
+          content: none;
+        }
+      }
+      &:before {
+        content: none;
+        background: url(../img/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        left: -100px;
+        width: 1024px;
+        height: 310px;
+        z-index: -1;
+        @media (max-width: 1024px) {
+          content: "";
+        }
         @media (max-width: 767px) {
           content: none;
         }
@@ -1020,10 +1030,6 @@ main {
           left: 415px;
         }
         @media (max-width: 1024px) {
-          left: 385px;
-          top: 142px;
-        }
-        @media (max-width: 767px) {
           display: none;
         }
         .icon {
@@ -1091,10 +1097,13 @@ main {
           left: 35px;
         }
         @media (max-width: 1024px) {
-          top: 165px;
-          left: 44px;
+          top: 23px;
+          left: 68px;
         }
         .lines {
+          @media (max-width: 1024px) {
+            display: none;
+          }
           .line {
             @media (max-width: 1400px) {
               width: 36px;
@@ -1113,7 +1122,7 @@ main {
             font-size: 20px;
           }
           @media (max-width: 1024px) {
-            font-size: 16px;
+            font-size: 14px;
           }
         }
       }
@@ -1127,10 +1136,14 @@ main {
         @media (max-width: 1400px) {
           top: 15px;
         }
+        @media (max-width: 1024px) {
+          top: 55px;
+          left: 185px;
+          transform: translateX(0);
+        }
         @media (max-width: 767px) {
           left: 20px;
           top: 20px;
-          transform: translateX(0);
         }
       }
       .opinions {
@@ -1150,8 +1163,9 @@ main {
           width: 270px;
         }
         @media (max-width: 1024px) {
-          right: 170px;
-          top: 240px;
+          right: -72px;
+          top: 10px;
+          width: 230px;
         }
       }
       .info-back {
@@ -1166,14 +1180,15 @@ main {
           left: 60px;
         }
         @media (max-width: 1024px) {
-          top: 365px;
+          top: 95px;
+          left: 385px;
         }
         span {
           @media (max-width: 1400px) {
             font-size: 18px;
           }
           @media (max-width: 1024px) {
-            font-size: 16px;
+            font-size: 15px;
           }
         }
         p {
@@ -1181,7 +1196,7 @@ main {
             font-size: 28px;
           }
           @media (max-width: 1024px) {
-            font-size: 22px;
+            font-size: 20px;
           }
         }
       }
@@ -1197,11 +1212,15 @@ main {
           top: 540px;
         }
         @media (max-width: 1024px) {
-          top: 500px;
+          top: 208px;
+          left: 342px;
         }
         span {
           @media (max-width: 1400px) {
             font-size: 18px;
+          }
+          @media (max-width: 1024px) {
+            font-size: 14px;
           }
         }
       }
@@ -1218,15 +1237,16 @@ main {
           padding: 10px 30px;
         }
         @media (max-width: 1024px) {
-          top: 280px;
-          left: 20px;
+          top: 30px;
+          left: 355px;
+          padding: 10px 20px;
         }
         span {
           @media (max-width: 1400px) {
             font-size: 20px;
           }
           @media (max-width: 1024px) {
-            font-size: 18px;
+            font-size: 15px;
           }
         }
       }
@@ -1245,8 +1265,10 @@ main {
           left: 180px;
         }
         @media (max-width: 1024px) {
-          padding: 15px 20px;
-          top: 120px;
+          padding: 5px 10px;
+          top: 80px;
+          left: 60px;
+          @include dir-col;
         }
         .text {
           font-size: 30px;
@@ -1258,6 +1280,10 @@ main {
             font-size: 20px;
             max-width: 90px;
           }
+          @media (max-width: 1024px) {
+            font-size: 14px;
+            max-width: 70px;
+          }
         }
         img {
           margin-right: 30px;
@@ -1266,6 +1292,11 @@ main {
           }
           @media (max-width: 1400px) {
             width: 24px;
+          }
+          @media (max-width: 1024px) {
+            width: 14px;
+            margin-right: 0;
+            margin-bottom: 6px;
           }
         }
       }
