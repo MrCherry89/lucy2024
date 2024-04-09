@@ -77,4 +77,80 @@ $(document).ready(function () {
     }
     return false;
   });
+
+  const image = document.querySelector(".right-img");
+
+  // Create GSAP timeline
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#header",
+      scrub: true,
+      start: "top top",
+      end: "bottom bottom",
+      invalidateOnRefresh: true,
+    },
+  });
+
+  // Add animation to move the image left
+  tl.to(image, {
+    x: "50%", // Move left by 50% of the image width
+    ease: "none", // Linear easing
+  });
+
+  const image2 = document.querySelector(".left-img");
+
+  // Create GSAP timeline
+  const tl2 = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#header",
+      scrub: true,
+      start: "top top",
+      end: "bottom bottom",
+      invalidateOnRefresh: true,
+    },
+  });
+
+  // Add animation to move the image left
+  tl2.to(image2, {
+    x: "-50%", // Move left by 50% of the image width
+    ease: "none", // Linear easing
+  });
+
+  const image3 = document.querySelector(".right-img-mobile");
+
+  // Create GSAP timeline
+  const tl3 = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#header",
+      scrub: true,
+      start: "top top",
+      end: "bottom bottom",
+      invalidateOnRefresh: true,
+    },
+  });
+
+  // Add animation to move the image left
+  tl3.to(image3, {
+    x: "50%", // Move left by 50% of the image width
+    ease: "none", // Linear easing
+  });
+
+  const image4 = document.querySelector(".left-img-mobile");
+
+  // Create GSAP timeline
+  const tl4 = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#header",
+      scrub: true,
+      start: "top top",
+      end: "bottom bottom",
+      invalidateOnRefresh: true,
+    },
+  });
+
+  // Add animation to move the image left
+  tl4.to(image4, {
+    x: "-50%", // Move left by 50% of the image width
+    ease: "none", // Linear easing
+  });
 });
