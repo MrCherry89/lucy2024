@@ -1974,9 +1974,14 @@ main:after {
     margin: 60px 0 30px;
   }
 }
+@media (max-width: 1400px) {
+  .info-items-wrap.mt {
+    margin-top: -110px;
+  }
+}
 @media (max-width: 767px) {
   .info-items-wrap.mt {
-    margin-top: -10px;
+    margin-top: 0;
   }
 }
 .info-items-wrap .wrapper {
@@ -3611,7 +3616,7 @@ main.zIndex {
   margin: 0 auto;
   padding: 0 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 1400px) {
   .opinions-wrap .wrapper .info {
     position: relative;
     top: -140px;
