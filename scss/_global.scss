@@ -1035,10 +1035,10 @@ main {
           }
           @media (max-width: 1400px) {
             width: 20px;
+            left: 12px;
           }
           @media (max-width: 1024px) {
             top: 7px;
-            left: 12px;
           }
         }
         .border {
@@ -1070,12 +1070,12 @@ main {
             font-size: 14px;
             line-height: 16px;
             bottom: 7px;
+            left: 12px;
           }
           @media (max-width: 1024px) {
             font-size: 13px;
             line-height: 15px;
             bottom: 9px;
-            left: 12px;
           }
         }
       }
@@ -1087,11 +1087,34 @@ main {
           left: 70px;
         }
         @media (max-width: 1400px) {
-          top: 188px;
-          left: 45px;
+          top: 175px;
+          left: 35px;
         }
         @media (max-width: 1024px) {
-          top: 170px;
+          top: 165px;
+          left: 44px;
+        }
+        .lines {
+          .line {
+            @media (max-width: 1400px) {
+              width: 36px;
+              height: 4px;
+              margin: 3px auto;
+            }
+            @media (max-width: 1024px) {
+              width: 22px;
+              height: 3px;
+              margin: 2px auto;
+            }
+          }
+        }
+        .archive-btn {
+          @media (max-width: 1400px) {
+            font-size: 20px;
+          }
+          @media (max-width: 1024px) {
+            font-size: 16px;
+          }
         }
       }
       .logo {
@@ -1123,12 +1146,13 @@ main {
           right: 550px;
         }
         @media (max-width: 1400px) {
-          top: 320px;
-          right: 400px;
+          top: 280px;
+          right: 391px;
+          width: 270px;
         }
         @media (max-width: 1024px) {
-          right: 190px;
-          top: 310px;
+          right: 170px;
+          top: 240px;
         }
       }
       .info-back {
@@ -1145,6 +1169,22 @@ main {
         @media (max-width: 1024px) {
           top: 365px;
         }
+        span {
+          @media (max-width: 1400px) {
+            font-size: 18px;
+          }
+          @media (max-width: 1024px) {
+            font-size: 16px;
+          }
+        }
+        p {
+          @media (max-width: 1400px) {
+            font-size: 28px;
+          }
+          @media (max-width: 1024px) {
+            font-size: 22px;
+          }
+        }
       }
       .offers-btn {
         left: 120px;
@@ -1154,11 +1194,16 @@ main {
           top: 745px;
         }
         @media (max-width: 1400px) {
-          left: 20px;
-          top: 545px;
+          left: 0px;
+          top: 540px;
         }
         @media (max-width: 1024px) {
           top: 500px;
+        }
+        span {
+          @media (max-width: 1400px) {
+            font-size: 18px;
+          }
         }
       }
       .poems {
@@ -1169,11 +1214,21 @@ main {
           top: 425px;
         }
         @media (max-width: 1400px) {
-          left: 50px;
+          left: 15px;
           top: 300px;
+          padding: 10px 30px;
         }
         @media (max-width: 1024px) {
           top: 280px;
+          left: 20px;
+        }
+        span {
+          @media (max-width: 1400px) {
+            font-size: 20px;
+          }
+          @media (max-width: 1024px) {
+            font-size: 18px;
+          }
         }
       }
       .song {
@@ -1201,14 +1256,17 @@ main {
             max-width: 120px;
           }
           @media (max-width: 1400px) {
-            font-size: 18px;
-            max-width: 80px;
+            font-size: 20px;
+            max-width: 90px;
           }
         }
         img {
           margin-right: 30px;
           @media (max-width: 1920px) {
             margin-right: 15px;
+          }
+          @media (max-width: 1400px) {
+            width: 24px;
           }
         }
       }

@@ -131,7 +131,7 @@ $(document).ready(function () {
 
   // Add animation to move the image left
   tl3.to(image3, {
-    x: "50%", // Move left by 50% of the image width
+    x: "100%", // Move left by 50% of the image width
     ease: "none", // Linear easing
   });
 
@@ -150,7 +150,7 @@ $(document).ready(function () {
 
   // Add animation to move the image left
   tl4.to(image4, {
-    x: "-50%", // Move left by 50% of the image width
+    x: "-100%", // Move left by 50% of the image width
     ease: "none", // Linear easing
   });
 });
