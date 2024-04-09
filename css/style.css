@@ -1448,7 +1448,6 @@ main:after {
 @media (max-width: 1400px) {
   .header.header2 .wrapper .logo {
     top: 15px;
-    left: 60%;
   }
 }
 @media (max-width: 767px) {
