@@ -1085,6 +1085,36 @@ main {
           }
         }
       }
+      .opinions3 {
+        display: none;
+        @media (max-width: 1024px) {
+          @include inline-flex;
+          @include dir-col;
+          @include align-center;
+          @include justify-center;
+          position: absolute;
+          left: 70px;
+          top: 175px;
+          z-index: 2;
+          a {
+            position: relative;
+            z-index: 0;
+            span {
+              position: absolute;
+              top: 10px;
+              left: 20px;
+              font-size: 14px;
+              text-transform: uppercase;
+              color: #7737a4;
+              white-space: nowrap;
+              transform: rotate(2deg);
+            }
+          }
+        }
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
       .archive {
         top: 210px;
         left: 170px;
