@@ -697,6 +697,42 @@ main.no-bg:after {
     left: 20px;
   }
 }
+.header .wrapper .logo.big {
+  width: 310px;
+  top: 112px;
+  left: 464px;
+}
+@media (max-width: 1920px) {
+  .header .wrapper .logo.big {
+    width: 250px;
+    top: 84px;
+    left: 312px;
+  }
+}
+@media (max-width: 1400px) {
+  .header .wrapper .logo.big {
+    width: 170px;
+    top: 54px;
+    left: 252px;
+  }
+}
+@media (max-width: 1024px) {
+  .header .wrapper .logo.big {
+    width: 150px;
+    top: 53px;
+    left: 148px;
+  }
+}
+@media (max-width: 767px) {
+  .header .wrapper .logo.big {
+    width: 210px;
+    top: 20px;
+    left: 20px;
+  }
+}
+.header .wrapper .logo.big img {
+  width: 100%;
+}
 .header .wrapper .logo img {
   transition: 0.3s;
   max-width: 100%;
