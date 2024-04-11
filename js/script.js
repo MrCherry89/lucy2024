@@ -153,4 +153,24 @@ $(document).ready(function () {
     x: "-100%", // Move left by 50% of the image width
     ease: "none", // Linear easing
   });
+
+  $(".video-slider").slick({
+    dots: true,
+    arrows: true,
+    infinite: false,
+    variableWidth: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    prevArrow: $(".video-slider-wrap .slider-navigation .slick-prev"),
+    nextArrow: $(".video-slider-wrap .slider-navigation .slick-next"),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          variableWidth: false,
+        },
+      },
+    ],
+  });
 });
