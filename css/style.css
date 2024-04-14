@@ -2722,13 +2722,13 @@ main.no-bg:after {
 .archive-wrap.poem-wrap:before {
   content: "";
   background: url(../img/letters-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat-y;
+  background-size: 100%;
   background-position: center center;
   position: absolute;
   top: 0;
   width: 100%;
-  height: 1557px;
+  height: 4000px;
   left: 0;
   z-index: -1;
 }
@@ -2745,24 +2745,6 @@ main.no-bg:after {
 .archive-wrap.poem-wrap .archive-items {
   position: relative;
   z-index: -1;
-}
-.archive-wrap.poem-wrap .archive-items:after {
-  content: "";
-  background: url(../img/letters-img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1557px;
-  left: 0;
-  z-index: -1;
-}
-@media (max-width: 767px) {
-  .archive-wrap.poem-wrap .archive-items:after {
-    content: none;
-  }
 }
 .archive-wrap.music-wrap {
   padding-bottom: 60px;
