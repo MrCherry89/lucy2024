@@ -1430,6 +1430,43 @@ main {
       }
     }
   }
+  &.main-header {
+    height: 857px;
+    z-index: 2;
+    @media (max-width: 1400px) {
+      height: 640px;
+    }
+    @media (max-width: 1024px) {
+      height: 1017px;
+    }
+    @media (max-width: 767px) {
+      height: 470px;
+    }
+    &:after {
+      content: "";
+      background: url(../img/main-header-bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      @media (max-width: 1024px) {
+        background: url(../img/main-header-bg-mobile.jpg);
+        height: 1017px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: absolute;
+      }
+      @media (max-width: 767px) {
+        height: 470px;
+      }
+    }
+  }
   &.creative-header {
     position: relative;
     z-index: 0;
@@ -1478,6 +1515,80 @@ main {
         width: 100%;
         height: 40px;
         z-index: 10;
+      }
+    }
+  }
+}
+
+.main-info {
+  .quote-info {
+    max-width: 1080px;
+    width: 100%;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-bottom: 120px;
+    @media (max-width: 1400px) {
+      max-width: 760px;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 767px) {
+      max-width: 290px;
+    }
+    .text {
+      font-size: 45px;
+      font-weight: 500;
+      position: relative;
+      padding: 80px 0;
+      @media (max-width: 1400px) {
+        padding: 50px 0;
+        font-size: 40px;
+      }
+      @media (max-width: 1024px) {
+        font-size: 34px;
+      }
+      @media (max-width: 767px) {
+        font-size: 20px;
+        padding: 30px 0;
+      }
+      &:after {
+        content: "";
+        background: url(../img/quote.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 46px;
+        height: 38px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @media (max-width: 767px) {
+          width: 30px;
+          height: 22px;
+        }
+      }
+      &:before {
+        content: "";
+        background: url(../img/quote.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 46px;
+        height: 38px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @media (max-width: 767px) {
+          width: 30px;
+          height: 22px;
+        }
+      }
+    }
+
+    .name {
+      font-size: 34px;
+      text-align: right;
+      @media (max-width: 767px) {
+        font-size: 18px;
       }
     }
   }
