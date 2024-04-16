@@ -1438,13 +1438,230 @@ main {
     }
     @media (max-width: 1024px) {
       height: 1017px;
+      .wrapper {
+        &:before {
+          content: "";
+          background: url(../img/main-mobile.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          width: 1064px;
+          height: 1093px;
+          left: -180px;
+          top: 550px;
+        }
+        .lucy-img {
+          right: -137px;
+          top: 800px;
+          width: 400px;
+        }
+        .opinions2 {
+          display: block;
+          top: 678px;
+          left: 600px;
+          span {
+            font-size: 18px;
+            bottom: 18px;
+            line-height: 100%;
+          }
+          .icon {
+            top: 12px;
+            width: 24px;
+          }
+          .border {
+            width: 150px;
+          }
+        }
+        .info-back {
+          top: 1020px;
+          left: 110px;
+          span {
+            font-size: 20px;
+          }
+          p {
+            font-size: 34px;
+          }
+        }
+        .offers-btn {
+          top: 1220px;
+          left: 30px;
+          padding: 10px 30px;
+          span {
+            font-size: 20px;
+          }
+        }
+        .poems {
+          padding: 15px 30px;
+          left: 90px;
+          top: 885px;
+          span {
+            font-size: 20px;
+          }
+          img {
+            width: 24px;
+          }
+        }
+        .archive {
+          top: 715px;
+          left: 70px;
+          .archive-btn {
+            font-size: 20px;
+            padding: 10px 20px;
+          }
+          .lines {
+            display: flex;
+            .line {
+              width: 36px;
+              height: 4px;
+              margin: 3px auto;
+            }
+          }
+        }
+        .logo {
+          top: 20px;
+          left: 20px;
+          width: auto;
+        }
+        .song {
+          flex-direction: row;
+          padding: 20px 30px;
+          border-radius: 20px;
+          top: 650px;
+          left: 280px;
+          img {
+            width: auto;
+            margin-right: 10px;
+          }
+          .text {
+            font-size: 24px;
+            max-width: 120px;
+          }
+        }
+      }
+      .right-img-mobile,
+      .left-img-mobile {
+        display: none;
+      }
     }
     @media (max-width: 767px) {
-      height: 470px;
+      height: 490px;
+      .wrapper {
+        max-width: 375px;
+        &:before {
+          width: 530px;
+          height: 540px;
+          left: 44%;
+          transform: translateX(-50%);
+          top: 420px;
+        }
+        .lucy-img {
+          top: 540px;
+          display: block;
+          width: 200px;
+          right: -65px;
+        }
+        .opinions2 {
+          display: flex;
+          top: 478px;
+          left: 285px;
+          span {
+            font-size: 10px;
+            bottom: 8px;
+            line-height: 100%;
+          }
+          .icon {
+            width: 14px;
+            top: 8px;
+          }
+          .border {
+            width: 84px;
+          }
+        }
+        .info-back {
+          top: 640px;
+          left: 30px;
+          display: block;
+          span {
+            font-size: 12px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+        .offers-btn {
+          top: 745px;
+          left: -5px;
+          padding: 8px 15px;
+          display: flex;
+          span {
+            font-size: 12px;
+          }
+        }
+        .poems {
+          padding: 10px 15px;
+          left: 10px;
+          top: 580px;
+          display: flex;
+          span {
+            font-size: 14px;
+          }
+          img {
+            width: 16px;
+          }
+        }
+        .archive {
+          display: flex;
+          top: 492px;
+          left: 14px;
+          .archive-btn {
+            font-size: 13px;
+            padding: 5px 15px;
+          }
+          .lines {
+            display: flex;
+            .line {
+              width: 20px;
+              height: 3px;
+              margin: 2px auto;
+            }
+          }
+        }
+        .logo {
+          top: 20px;
+          left: 20px;
+          width: auto;
+        }
+        .song {
+          padding: 10px 20px;
+          top: 460px;
+          left: 115px;
+          display: flex;
+          img {
+            width: 20px;
+          }
+          .text {
+            font-size: 14px;
+            max-width: 70px;
+          }
+        }
+      }
+      .right-img-mobile,
+      .left-img-mobile {
+        display: none;
+      }
     }
+    .drop-menu {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+    .left-img {
+      left: -4vw;
+    }
+
     &:after {
       content: "";
-      background: url(../img/main-header-bg.jpg);
+      background: url(../img/main-header.png);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
@@ -1461,9 +1678,13 @@ main {
         background-size: cover;
         background-position: center center;
         position: absolute;
+        top: -250px;
       }
       @media (max-width: 767px) {
-        height: 470px;
+        top: 0;
+        left: -10%;
+        width: 110%;
+        height: 550px;
       }
     }
   }
@@ -1527,60 +1748,37 @@ main {
     padding: 0 20px;
     margin-left: auto;
     margin-bottom: 120px;
+    margin-top: 120px;
     @media (max-width: 1400px) {
       max-width: 760px;
       margin-bottom: 40px;
     }
+    @media (max-width: 1024px) {
+      position: absolute;
+      top: 380px;
+      max-width: 650px;
+      right: 100px;
+      z-index: 1;
+    }
     @media (max-width: 767px) {
-      max-width: 290px;
+      max-width: 360px;
+      top: 360px;
+      right: 0;
     }
     .text {
       font-size: 45px;
       font-weight: 500;
       position: relative;
-      padding: 80px 0;
+      margin-bottom: 70px;
       @media (max-width: 1400px) {
-        padding: 50px 0;
         font-size: 40px;
       }
       @media (max-width: 1024px) {
         font-size: 34px;
+        margin-bottom: 30px;
       }
       @media (max-width: 767px) {
         font-size: 20px;
-        padding: 30px 0;
-      }
-      &:after {
-        content: "";
-        background: url(../img/quote.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        width: 46px;
-        height: 38px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        @media (max-width: 767px) {
-          width: 30px;
-          height: 22px;
-        }
-      }
-      &:before {
-        content: "";
-        background: url(../img/quote.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        width: 46px;
-        height: 38px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        @media (max-width: 767px) {
-          width: 30px;
-          height: 22px;
-        }
       }
     }
 

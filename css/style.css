@@ -1848,15 +1848,229 @@ main.no-bg:after {
   .header.main-header {
     height: 1017px;
   }
+  .header.main-header .wrapper:before {
+    content: "";
+    background: url(../img/main-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 1064px;
+    height: 1093px;
+    left: -180px;
+    top: 550px;
+  }
+  .header.main-header .wrapper .lucy-img {
+    right: -137px;
+    top: 800px;
+    width: 400px;
+  }
+  .header.main-header .wrapper .opinions2 {
+    display: block;
+    top: 678px;
+    left: 600px;
+  }
+  .header.main-header .wrapper .opinions2 span {
+    font-size: 18px;
+    bottom: 18px;
+    line-height: 100%;
+  }
+  .header.main-header .wrapper .opinions2 .icon {
+    top: 12px;
+    width: 24px;
+  }
+  .header.main-header .wrapper .opinions2 .border {
+    width: 150px;
+  }
+  .header.main-header .wrapper .info-back {
+    top: 1020px;
+    left: 110px;
+  }
+  .header.main-header .wrapper .info-back span {
+    font-size: 20px;
+  }
+  .header.main-header .wrapper .info-back p {
+    font-size: 34px;
+  }
+  .header.main-header .wrapper .offers-btn {
+    top: 1220px;
+    left: 30px;
+    padding: 10px 30px;
+  }
+  .header.main-header .wrapper .offers-btn span {
+    font-size: 20px;
+  }
+  .header.main-header .wrapper .poems {
+    padding: 15px 30px;
+    left: 90px;
+    top: 885px;
+  }
+  .header.main-header .wrapper .poems span {
+    font-size: 20px;
+  }
+  .header.main-header .wrapper .poems img {
+    width: 24px;
+  }
+  .header.main-header .wrapper .archive {
+    top: 715px;
+    left: 70px;
+  }
+  .header.main-header .wrapper .archive .archive-btn {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  .header.main-header .wrapper .archive .lines {
+    display: flex;
+  }
+  .header.main-header .wrapper .archive .lines .line {
+    width: 36px;
+    height: 4px;
+    margin: 3px auto;
+  }
+  .header.main-header .wrapper .logo {
+    top: 20px;
+    left: 20px;
+    width: auto;
+  }
+  .header.main-header .wrapper .song {
+    flex-direction: row;
+    padding: 20px 30px;
+    border-radius: 20px;
+    top: 650px;
+    left: 280px;
+  }
+  .header.main-header .wrapper .song img {
+    width: auto;
+    margin-right: 10px;
+  }
+  .header.main-header .wrapper .song .text {
+    font-size: 24px;
+    max-width: 120px;
+  }
+  .header.main-header .right-img-mobile,
+.header.main-header .left-img-mobile {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .header.main-header {
-    height: 470px;
+    height: 490px;
   }
+  .header.main-header .wrapper {
+    max-width: 375px;
+  }
+  .header.main-header .wrapper:before {
+    width: 530px;
+    height: 540px;
+    left: 44%;
+    transform: translateX(-50%);
+    top: 420px;
+  }
+  .header.main-header .wrapper .lucy-img {
+    top: 540px;
+    display: block;
+    width: 200px;
+    right: -65px;
+  }
+  .header.main-header .wrapper .opinions2 {
+    display: flex;
+    top: 478px;
+    left: 285px;
+  }
+  .header.main-header .wrapper .opinions2 span {
+    font-size: 10px;
+    bottom: 8px;
+    line-height: 100%;
+  }
+  .header.main-header .wrapper .opinions2 .icon {
+    width: 14px;
+    top: 8px;
+  }
+  .header.main-header .wrapper .opinions2 .border {
+    width: 84px;
+  }
+  .header.main-header .wrapper .info-back {
+    top: 640px;
+    left: 30px;
+    display: block;
+  }
+  .header.main-header .wrapper .info-back span {
+    font-size: 12px;
+  }
+  .header.main-header .wrapper .info-back p {
+    font-size: 16px;
+  }
+  .header.main-header .wrapper .offers-btn {
+    top: 745px;
+    left: -5px;
+    padding: 8px 15px;
+    display: flex;
+  }
+  .header.main-header .wrapper .offers-btn span {
+    font-size: 12px;
+  }
+  .header.main-header .wrapper .poems {
+    padding: 10px 15px;
+    left: 10px;
+    top: 580px;
+    display: flex;
+  }
+  .header.main-header .wrapper .poems span {
+    font-size: 14px;
+  }
+  .header.main-header .wrapper .poems img {
+    width: 16px;
+  }
+  .header.main-header .wrapper .archive {
+    display: flex;
+    top: 492px;
+    left: 14px;
+  }
+  .header.main-header .wrapper .archive .archive-btn {
+    font-size: 13px;
+    padding: 5px 15px;
+  }
+  .header.main-header .wrapper .archive .lines {
+    display: flex;
+  }
+  .header.main-header .wrapper .archive .lines .line {
+    width: 20px;
+    height: 3px;
+    margin: 2px auto;
+  }
+  .header.main-header .wrapper .logo {
+    top: 20px;
+    left: 20px;
+    width: auto;
+  }
+  .header.main-header .wrapper .song {
+    padding: 10px 20px;
+    top: 460px;
+    left: 115px;
+    display: flex;
+  }
+  .header.main-header .wrapper .song img {
+    width: 20px;
+  }
+  .header.main-header .wrapper .song .text {
+    font-size: 14px;
+    max-width: 70px;
+  }
+  .header.main-header .right-img-mobile,
+.header.main-header .left-img-mobile {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .header.main-header .drop-menu {
+    display: none;
+  }
+}
+.header.main-header .left-img {
+  left: -4vw;
 }
 .header.main-header:after {
   content: "";
-  background: url(../img/main-header-bg.jpg);
+  background: url(../img/main-header.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1875,11 +2089,15 @@ main.no-bg:after {
     background-size: cover;
     background-position: center center;
     position: absolute;
+    top: -250px;
   }
 }
 @media (max-width: 767px) {
   .header.main-header:after {
-    height: 470px;
+    top: 0;
+    left: -10%;
+    width: 110%;
+    height: 550px;
   }
 }
 .header.creative-header {
@@ -1952,6 +2170,7 @@ main.no-bg:after {
   padding: 0 20px;
   margin-left: auto;
   margin-bottom: 120px;
+  margin-top: 120px;
 }
 @media (max-width: 1400px) {
   .main-info .quote-info {
@@ -1959,68 +2178,42 @@ main.no-bg:after {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 1024px) {
+  .main-info .quote-info {
+    position: absolute;
+    top: 380px;
+    max-width: 650px;
+    right: 100px;
+    z-index: 1;
+  }
+}
 @media (max-width: 767px) {
   .main-info .quote-info {
-    max-width: 290px;
+    max-width: 360px;
+    top: 360px;
+    right: 0;
   }
 }
 .main-info .quote-info .text {
   font-size: 45px;
   font-weight: 500;
   position: relative;
-  padding: 80px 0;
+  margin-bottom: 70px;
 }
 @media (max-width: 1400px) {
   .main-info .quote-info .text {
-    padding: 50px 0;
     font-size: 40px;
   }
 }
 @media (max-width: 1024px) {
   .main-info .quote-info .text {
     font-size: 34px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 767px) {
   .main-info .quote-info .text {
     font-size: 20px;
-    padding: 30px 0;
-  }
-}
-.main-info .quote-info .text:after {
-  content: "";
-  background: url(../img/quote.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 46px;
-  height: 38px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-@media (max-width: 767px) {
-  .main-info .quote-info .text:after {
-    width: 30px;
-    height: 22px;
-  }
-}
-.main-info .quote-info .text:before {
-  content: "";
-  background: url(../img/quote.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  width: 46px;
-  height: 38px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-@media (max-width: 767px) {
-  .main-info .quote-info .text:before {
-    width: 30px;
-    height: 22px;
   }
 }
 .main-info .quote-info .name {
@@ -2266,6 +2459,16 @@ main.no-bg:after {
 @media (max-width: 1920px) {
   .bottom-info.style2 {
     padding-bottom: 90px;
+  }
+}
+@media (max-width: 1024px) {
+  .bottom-info.style2 {
+    margin-top: 530px;
+  }
+}
+@media (max-width: 1024px) {
+  .bottom-info.style2 {
+    margin-top: 0;
   }
 }
 .bottom-info.style2 .info-img {
@@ -4131,7 +4334,7 @@ main.main-bg {
   flex-grow: 1;
   position: relative;
   z-index: 0;
-  padding-top: 230px;
+  padding-top: 190px;
   padding-bottom: 0;
 }
 @media (max-width: 1400px) {
@@ -4139,9 +4342,9 @@ main.main-bg {
     padding-top: 80px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   main.main-bg {
-    padding-top: 250px;
+    padding-top: 890px;
   }
 }
 main.main-bg:after {
@@ -4170,25 +4373,44 @@ main.main-bg:after {
 }
 @media (max-width: 1024px) {
   main.main-bg:after {
-    top: 0;
-    height: 100%;
-  }
-}
-@media (max-width: 767px) {
-  main.main-bg:after {
-    top: 0;
-    height: 100%;
+    height: 1890px;
     background: url(../img/main-bg-mobile.png);
     background-repeat: no-repeat;
     transform: translateX(0);
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+  }
+}
+@media (max-width: 767px) {
+  main.main-bg:after {
+    height: 870px;
+    top: 280px;
+  }
+}
+@media (max-width: 1024px) {
+  main.main-bg .style2 {
+    margin-top: 530px;
+  }
+}
+@media (max-width: 767px) {
+  main.main-bg .style2 {
+    padding-top: 0;
+    margin-top: -140px;
+  }
+}
+@media (max-width: 767px) {
+  main.main-bg .info-wrap .links {
+    max-width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  main.main-bg .info-wrap .img-wrap {
+    max-width: 150px;
   }
 }
 
