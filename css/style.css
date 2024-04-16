@@ -2001,7 +2001,7 @@ main.no-bg:after {
   }
   .header.main-header .wrapper .offers-btn {
     top: 745px;
-    left: -5px;
+    left: 0px;
     padding: 8px 15px;
     display: flex;
   }
