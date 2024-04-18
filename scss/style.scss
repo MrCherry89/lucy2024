@@ -1832,10 +1832,11 @@ main.main-bg {
   margin-top: 500px;
   margin-bottom: 150px;
   @media (max-width: 767px) {
+    margin-top: 130vw;
     margin-bottom: 0;
   }
   @media (max-width: 500px) {
-    margin-top: 350px;
+    margin-top: 140vw;
   }
   .wrapper {
     position: relative;
@@ -2066,8 +2067,11 @@ main.main-bg {
     }
   }
   &.creative-wrap {
+    @media (max-width: 767px) {
+      margin-top: 105vw;
+    }
     @media (max-width: 500px) {
-      margin-top: 450px;
+      margin-top: 145vw;
     }
     .creative-img-wrap {
       bottom: 95%;
