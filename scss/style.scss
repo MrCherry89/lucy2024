@@ -171,6 +171,17 @@
       display: none;
     }
   }
+  &.white-style {
+    background: white;
+    margin-top: 0;
+    padding-top: 150px;
+    @media (max-width: 1200px) {
+      padding-top: 100px;
+    }
+    @media (max-width: 767px) {
+      padding-top: 250px;
+    }
+  }
 }
 
 .midi-block {
@@ -340,6 +351,14 @@
             width: 500px;
             @media (max-width: 500px) {
               width: 100vw;
+            }
+          }
+          &.stories-img {
+            top: 50%;
+            left: 48%;
+            width: 490px;
+            @media (max-width: 500px) {
+              width: 90vw;
             }
           }
         }
@@ -1815,10 +1834,13 @@ main.main-bg {
   @media (max-width: 767px) {
     margin-bottom: 0;
   }
+  @media (max-width: 500px) {
+    margin-top: 350px;
+  }
   .wrapper {
     position: relative;
     z-index: 2;
-    .img-wrap {
+    .creative-img-wrap {
       position: absolute;
       bottom: 58%;
       right: -120px;
@@ -1840,6 +1862,7 @@ main.main-bg {
       @media (max-width: 767px) {
         bottom: 124%;
         right: -40px;
+        display: none;
       }
       .guitar-img {
         @media (max-width: 2400px) {
@@ -1868,8 +1891,8 @@ main.main-bg {
           bottom: 300px;
         }
         @media (max-width: 1024px) {
-          bottom: 330px;
-          left: -160px;
+          bottom: 200px;
+          left: -110px;
         }
         @media (max-width: 767px) {
           left: 100px;
@@ -2043,7 +2066,10 @@ main.main-bg {
     }
   }
   &.creative-wrap {
-    .img-wrap {
+    @media (max-width: 500px) {
+      margin-top: 450px;
+    }
+    .creative-img-wrap {
       bottom: 95%;
       right: -730px;
       @media (max-width: 2200px) {
@@ -2063,6 +2089,7 @@ main.main-bg {
       @media (max-width: 767px) {
         right: -50vw;
         bottom: 135%;
+        display: none;
       }
       .creative-img {
         @media (max-width: 2200px) {

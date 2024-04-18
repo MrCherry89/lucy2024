@@ -11,9 +11,14 @@ $(document).ready(function () {
 
   $(".drop-menu").click(function (e) {
     e.stopPropagation();
-    $(this).toggleClass("is-active");
-    $(".header-menu-wrap").toggleClass("open");
-    $("body, html").toggleClass("overflow");
+    $(".header-menu-wrap").addClass("open");
+    $("body, html").addClass("overflow");
+  });
+
+  $(".close").click(function (e) {
+    e.stopPropagation();
+    $(".header-menu-wrap").removeClass("open");
+    $("body, html").removeClass("overflow");
   });
 
   $(".read").on("click", function () {
