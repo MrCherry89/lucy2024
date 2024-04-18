@@ -796,7 +796,7 @@ main.overflow {
     width: 30px;
   }
 }
-.header .wrapper .opinions a {
+.header .wrapper .opinions span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,19 +815,19 @@ main.overflow {
   transform: rotate(3deg);
 }
 @media (max-width: 1920px) {
-  .header .wrapper .opinions a {
+  .header .wrapper .opinions span {
     padding: 10px 30px;
     font-size: 22px;
   }
 }
 @media (max-width: 1400px) {
-  .header .wrapper .opinions a {
+  .header .wrapper .opinions span {
     font-size: 16px;
     padding: 5px 15px;
     border-width: 2px;
   }
 }
-.header .wrapper .opinions a:hover {
+.header .wrapper .opinions span:hover {
   border-color: #7737a4;
   color: #7737a4;
 }
@@ -1192,7 +1192,9 @@ main.overflow {
   color: #000;
   font-style: italic;
   margin: 5px 0;
-  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media (max-width: 1920px) {
   .header .wrapper .info-back .info p {
@@ -1207,6 +1209,28 @@ main.overflow {
 }
 @media (max-width: 1024px) {
   .header .wrapper .info-back .info p {
+    font-size: 20px;
+  }
+}
+.header .wrapper .info-back .info p span {
+  text-transform: capitalize;
+  font-size: 40px;
+  color: #000;
+  font-style: italic;
+  margin: 0;
+}
+@media (max-width: 1920px) {
+  .header .wrapper .info-back .info p span {
+    font-size: 34px;
+  }
+}
+@media (max-width: 1400px) {
+  .header .wrapper .info-back .info p span {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1024px) {
+  .header .wrapper .info-back .info p span {
     font-size: 20px;
   }
 }
@@ -1632,11 +1656,11 @@ main.overflow {
     top: 175px;
     z-index: 2;
   }
-  .header.header2 .wrapper .opinions3 a {
+  .header.header2 .wrapper .opinions3 div {
     position: relative;
     z-index: 0;
   }
-  .header.header2 .wrapper .opinions3 a span {
+  .header.header2 .wrapper .opinions3 div span {
     position: absolute;
     top: 10px;
     left: 20px;

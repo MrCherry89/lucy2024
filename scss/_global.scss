@@ -656,7 +656,7 @@ main {
           width: 30px;
         }
       }
-      a {
+      span {
         @include flex;
         @include align-center;
         @include justify-center;
@@ -961,7 +961,7 @@ main {
           color: #000;
           font-style: italic;
           margin: 5px 0;
-          text-transform: uppercase;
+          @include flex;
           @media (max-width: 1920px) {
             font-size: 34px;
           }
@@ -971,6 +971,22 @@ main {
           }
           @media (max-width: 1024px) {
             font-size: 20px;
+          }
+          span {
+            text-transform: capitalize;
+            font-size: 40px;
+            color: #000;
+            font-style: italic;
+            margin: 0;
+            @media (max-width: 1920px) {
+              font-size: 34px;
+            }
+            @media (max-width: 1400px) {
+              font-size: 22px;
+            }
+            @media (max-width: 1024px) {
+              font-size: 20px;
+            }
           }
         }
         img {
@@ -1295,7 +1311,7 @@ main {
           left: 70px;
           top: 175px;
           z-index: 2;
-          a {
+          div {
             position: relative;
             z-index: 0;
             span {
