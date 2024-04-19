@@ -690,6 +690,7 @@
   position: relative;
   z-index: 0;
   &.poem-wrap {
+    overflow: hidden;
     &:before {
       content: "";
       background: url(../img/letters-img.jpg);
@@ -1655,7 +1656,7 @@
             padding-left: 40px;
           }
           @media (max-width: 767px) {
-            padding-left: 20px;
+            padding-left: 0px;
             height: 190px;
           }
           &:after {
@@ -1680,8 +1681,9 @@
               line-height: 127%;
             }
             @media (max-width: 767px) {
-              max-width: 300px;
+              max-width: 330px;
               padding-left: 0;
+              font-size: 14px;
             }
           }
           h3 {

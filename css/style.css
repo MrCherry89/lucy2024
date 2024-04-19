@@ -169,6 +169,11 @@ main.no-bg:after {
 main.overflow {
   overflow-y: hidden;
 }
+@media (max-width: 1024px) {
+  main.overflow {
+    overflow: visible;
+  }
+}
 
 .mfp-fade.mfp-bg {
   opacity: 0;
@@ -3754,6 +3759,9 @@ main.overflow {
   position: relative;
   z-index: 0;
 }
+.archive-wrap.poem-wrap {
+  overflow: hidden;
+}
 .archive-wrap.poem-wrap:before {
   content: "";
   background: url(../img/letters-img.jpg);
@@ -4903,7 +4911,7 @@ main.overflow {
 }
 @media (max-width: 767px) {
   .archive-items .archive-item .item-bottom .item-bottom-info .hide-info {
-    padding-left: 20px;
+    padding-left: 0px;
     height: 190px;
   }
 }
@@ -4935,8 +4943,9 @@ main.overflow {
 }
 @media (max-width: 767px) {
   .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p {
-    max-width: 300px;
+    max-width: 330px;
     padding-left: 0;
+    font-size: 14px;
   }
 }
 .archive-items .archive-item .item-bottom .item-bottom-info .hide-info h3 {
