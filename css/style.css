@@ -4054,8 +4054,9 @@ main.overflow {
   }
 }
 .archive-wrap .info-style .img.poem-style-img {
-  right: -80px;
-  top: 45%;
+  right: -40px;
+  top: 25%;
+  width: 300px;
 }
 .archive-wrap .info-style .img.music-style-img {
   right: 10px;
@@ -4916,7 +4917,7 @@ main.overflow {
   }
 }
 .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p {
-  max-width: 520px;
+  max-width: 550px;
   padding-left: 20px;
   line-height: 123%;
 }
