@@ -4941,9 +4941,16 @@ main.overflow {
 }
 @media (max-width: 767px) {
   .archive-items .archive-item .item-bottom .item-bottom-info .hide-info h3 {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
+}
+.archive-items .archive-item .item-bottom .item-bottom-info .hide-info.style2 {
+  overflow: visible;
+  height: auto;
+}
+.archive-items .archive-item .item-bottom .item-bottom-info .hide-info.style2:after {
+  content: none;
 }
 .archive-items .archive-item .item-bottom .item-bottom-info .hide-info.visible {
   overflow: visible;

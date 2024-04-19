@@ -1691,8 +1691,15 @@
             font-weight: 500;
             text-transform: uppercase;
             @media (max-width: 767px) {
-              font-size: 24px;
+              font-size: 20px;
               margin-bottom: 20px;
+            }
+          }
+          &.style2 {
+            overflow: visible;
+            height: auto;
+            &:after {
+              content: none;
             }
           }
           &.visible {
