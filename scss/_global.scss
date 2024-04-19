@@ -228,9 +228,11 @@ main {
       overflow-y: auto;
       z-index: 100;
       background: #282828;
-      display: block;
+      @include flex;
+      @include dir-col;
       transform: translateY(-100%);
       visibility: hidden;
+      padding-bottom: 50px;
       opacity: 0;
       transition: 0.3s;
       &.open {

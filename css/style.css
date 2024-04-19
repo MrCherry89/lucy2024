@@ -267,9 +267,16 @@ main.overflow {
     overflow-y: auto;
     z-index: 100;
     background: #282828;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     transform: translateY(-100%);
     visibility: hidden;
+    padding-bottom: 50px;
     opacity: 0;
     transition: 0.3s;
   }
@@ -4054,9 +4061,8 @@ main.overflow {
   }
 }
 .archive-wrap .info-style .img.poem-style-img {
-  right: -40px;
-  top: 25%;
-  width: 300px;
+  right: -80px;
+  top: 45%;
 }
 .archive-wrap .info-style .img.music-style-img {
   right: 10px;
