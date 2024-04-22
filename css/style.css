@@ -4956,7 +4956,7 @@ main.main-bg:after {
 }
 .archive-items .archive-item .item-bottom .hide-info p {
   max-width: 460px;
-  font-size: 25px;
+  font-size: 28px;
   margin-bottom: 40px;
 }
 @media (max-width: 1100px) {
@@ -5032,7 +5032,7 @@ main.main-bg:after {
 }
 @media (max-width: 767px) {
   .archive-items .archive-item .item-bottom .item-bottom-info .hide-info:after {
-    height: 24px;
+    height: 17px;
     bottom: 0px;
   }
 }
@@ -5138,7 +5138,7 @@ main.main-bg:after {
   }
 }
 .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w550 {
-  max-width: 490px;
+  max-width: 550px;
 }
 @media (max-width: 1100px) {
   .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w550 {
@@ -5239,7 +5239,7 @@ main.main-bg:after {
   max-width: 680px;
 }
 .archive-items .archive-item .item-bottom .item-bottom-info .hide-info.w680 p.w640 {
-  max-width: 540px;
+  max-width: 640px;
 }
 @media (max-width: 1100px) {
   .archive-items .archive-item .item-bottom .item-bottom-info .hide-info.w680 p.w640 {
