@@ -5216,7 +5216,7 @@ main.main-bg:after {
 }
 @media (max-width: 767px) {
   .archive-items .archive-item .item-bottom .item-bottom-info .hide-info.w570 p.w510 {
-    max-width: 270px !important;
+    max-width: 240px !important;
   }
 }
 .archive-items .archive-item .item-bottom .item-bottom-info .hide-info.w600 p {
