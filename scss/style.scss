@@ -1632,11 +1632,6 @@
         max-width: 1000px;
         width: 100%;
         margin: 0 auto;
-        &.mobile-hide {
-          @media (max-width: 767px) {
-            display: none;
-          }
-        }
         .read {
           margin-top: 40px;
           @media (max-width: 1024px) {
@@ -1664,7 +1659,13 @@
             padding-left: 0px;
             height: 190px;
           }
-
+          &.w280 {
+            @media (max-width: 767px) {
+              p {
+                max-width: 280px !important;
+              }
+            }
+          }
           &:after {
             content: "";
             position: absolute;
@@ -1687,7 +1688,7 @@
               line-height: 127%;
             }
             @media (max-width: 767px) {
-              max-width: 330px !important;
+              max-width: 320px !important;
               padding-left: 0;
               font-size: 14px;
             }
@@ -1709,29 +1710,51 @@
                 max-width: 370px;
               }
             }
+            &.w220 {
+              @media (max-width: 767px) {
+                max-width: 220px !important;
+              }
+            }
             &.w520 {
               max-width: 520px !important;
               @media (max-width: 1100px) {
-                max-width: 490px !important;
+                max-width: 420px !important;
               }
               @media (max-width: 767px) {
-                max-width: 320px !important;
+                max-width: 250px !important;
               }
             }
             &.w560 {
               max-width: 560px !important;
               @media (max-width: 1100px) {
-                max-width: 490px !important;
+                max-width: 470px !important;
               }
               @media (max-width: 767px) {
-                max-width: 320px !important;
+                max-width: 290px !important;
               }
             }
             &.w440 {
               max-width: 440px;
+              @media (max-width: 1100px) {
+                max-width: 400px;
+              }
               @media (max-width: 1024px) {
                 max-width: 390px;
               }
+              @media (max-width: 767px) {
+                max-width: 270px !important;
+              }
+              &.w380 {
+                @media (max-width: 1100px) {
+                  max-width: 380px;
+                }
+                @media (max-width: 767px) {
+                  max-width: 220px !important;
+                }
+              }
+            }
+            &.w430 {
+              max-width: 430px;
               @media (max-width: 767px) {
                 max-width: 270px !important;
               }
@@ -1742,6 +1765,9 @@
               &.style {
                 display: inline-block;
                 text-indent: 70px;
+                @media (max-width: 1100px) {
+                  text-indent: 50px;
+                }
               }
             }
           }
@@ -1774,7 +1800,10 @@
             p {
               max-width: 720px;
               @media (max-width: 1100px) {
-                max-width: 620px;
+                max-width: 570px;
+              }
+              @media (max-width: 767px) {
+                font-size: 12px;
               }
             }
           }
@@ -1787,7 +1816,7 @@
               &.w510 {
                 max-width: 510px;
                 @media (max-width: 1100px) {
-                  max-width: 420px;
+                  max-width: 400px;
                 }
                 @media (max-width: 767px) {
                   max-width: 270px !important;
@@ -1813,6 +1842,13 @@
                 @media (max-width: 1100px) {
                   max-width: 520px;
                 }
+              }
+            }
+          }
+          &.w460 {
+            p {
+              @media (max-width: 1100px) {
+                max-width: 460px;
               }
             }
           }
