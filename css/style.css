@@ -5097,20 +5097,20 @@ main.main-bg:after {
   }
 }
 .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w560 {
-  max-width: 560px !important;
+  max-width: 600px !important;
 }
 @media (max-width: 1100px) {
   .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w560 {
-    max-width: 470px !important;
+    max-width: 490px !important;
   }
 }
 @media (max-width: 767px) {
   .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w560 {
     max-width: 300px !important;
   }
-  .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w560 span {
-    margin-right: 30px;
-  }
+}
+.archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w560 span {
+  margin-right: 30px;
 }
 .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w440 {
   max-width: 440px;
