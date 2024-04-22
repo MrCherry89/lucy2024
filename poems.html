@@ -1310,26 +1310,5 @@
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
-
-    <script>
-      document
-        .getElementById("toggleButton")
-        .addEventListener("click", function () {
-          var content = document.querySelector(".content");
-          content.classList.toggle("hidden");
-          if (content.classList.contains("hidden")) {
-            this.textContent = "Показать";
-            content.scrollIntoView({ behavior: "smooth" });
-          } else {
-            this.textContent = "Скрыть";
-          }
-        });
-    </script>
-
-    <style>
-      .hidden {
-        display: none;
-      }
-    </style>
   </body>
 </html>
