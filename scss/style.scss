@@ -1730,7 +1730,10 @@
                 max-width: 470px !important;
               }
               @media (max-width: 767px) {
-                max-width: 270px !important;
+                max-width: 300px !important;
+                span {
+                  margin-right: 30px;
+                }
               }
             }
             &.w440 {

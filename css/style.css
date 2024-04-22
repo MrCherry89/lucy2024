@@ -5106,7 +5106,10 @@ main.main-bg:after {
 }
 @media (max-width: 767px) {
   .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w560 {
-    max-width: 270px !important;
+    max-width: 300px !important;
+  }
+  .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w560 span {
+    margin-right: 30px;
   }
 }
 .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w440 {
