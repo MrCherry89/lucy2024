@@ -5137,11 +5137,11 @@ main.main-bg:after {
     max-width: 220px !important;
   }
 }
-.archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w430 {
-  max-width: 430px;
+.archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w550 {
+  max-width: 550px;
 }
 @media (max-width: 767px) {
-  .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w430 {
+  .archive-items .archive-item .item-bottom .item-bottom-info .hide-info p.w550 {
     max-width: 270px !important;
   }
 }
