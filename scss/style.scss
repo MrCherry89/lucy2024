@@ -1614,7 +1614,7 @@
         }
         p {
           max-width: 460px;
-          font-size: 28px;
+          font-size: 25px;
           margin-bottom: 40px;
           @media (max-width: 1100px) {
             font-size: 22px;
@@ -1754,7 +1754,7 @@
               }
             }
             &.w550 {
-              max-width: 550px;
+              max-width: 490px;
               @media (max-width: 1100px) {
                 max-width: 430px !important;
               }
@@ -1809,6 +1809,11 @@
                 font-size: 12px;
               }
             }
+            &:after {
+              @media (max-width: 767px) {
+                height: 14px;
+              }
+            }
           }
           &.w570 {
             p {
@@ -1841,7 +1846,7 @@
             p {
               max-width: 680px;
               &.w640 {
-                max-width: 640px;
+                max-width: 540px;
                 @media (max-width: 1100px) {
                   max-width: 520px;
                 }
