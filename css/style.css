@@ -5259,6 +5259,11 @@ main.main-bg:after {
 .archive-items .archive-item .item-bottom .item-bottom-info .hide-info.w570 p span {
   margin-right: 30px;
 }
+@media (max-width: 767px) {
+  .archive-items .archive-item .item-bottom .item-bottom-info .hide-info.w570 p span {
+    margin-right: 10px;
+  }
+}
 .archive-items .archive-item .item-bottom .item-bottom-info .hide-info.w570 p.w510 {
   max-width: 510px;
 }

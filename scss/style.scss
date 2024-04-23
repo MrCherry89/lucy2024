@@ -1856,6 +1856,9 @@
               }
               span {
                 margin-right: 30px;
+                @media (max-width: 767px) {
+                  margin-right: 10px;
+                }
               }
               &.w510 {
                 max-width: 510px;
