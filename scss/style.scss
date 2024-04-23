@@ -1614,7 +1614,7 @@
         }
         p {
           max-width: 460px;
-          font-size: 28px;
+          font-size: 25px;
           margin-bottom: 40px;
           @media (max-width: 1100px) {
             font-size: 22px;
@@ -1710,8 +1710,12 @@
               }
             }
             &.w220 {
+              max-width: 440px !important;
               @media (max-width: 767px) {
                 max-width: 220px !important;
+              }
+              span {
+                margin-right: 20px;
               }
             }
             &.w460 {
@@ -1719,33 +1723,36 @@
               @media (max-width: 1100px) {
                 max-width: 430px;
                 span {
-                  margin-right: 60px;
-                }
-              }
-              @media (max-width: 1024px) {
-                max-width: 410px;
-                span {
                   margin-right: 50px;
                 }
               }
               @media (max-width: 1024px) {
+                max-width: 440px;
+                span {
+                  margin-right: 50px;
+                }
+              }
+              @media (max-width: 767px) {
                 max-width: 270px !important;
               }
             }
 
             &.w520 {
-              max-width: 520px !important;
+              max-width: 490px !important;
               @media (max-width: 1100px) {
                 max-width: 420px !important;
               }
               @media (max-width: 767px) {
                 max-width: 250px !important;
               }
+              span {
+                margin-right: 20px;
+              }
             }
             &.w560 {
-              max-width: 600px !important;
+              max-width: 530px !important;
               @media (max-width: 1100px) {
-                max-width: 490px !important;
+                max-width: 510px !important;
               }
               @media (max-width: 767px) {
                 max-width: 300px !important;
@@ -1755,9 +1762,9 @@
               }
             }
             &.w440 {
-              max-width: 440px;
+              max-width: 390px;
               @media (max-width: 1100px) {
-                max-width: 400px;
+                max-width: 320px;
               }
               @media (max-width: 1024px) {
                 max-width: 390px;
@@ -1775,12 +1782,27 @@
               }
             }
             &.w550 {
-              max-width: 550px;
+              max-width: 520px;
               @media (max-width: 1100px) {
-                max-width: 430px !important;
+                max-width: 480px !important;
               }
               @media (max-width: 767px) {
-                max-width: 270px !important;
+                max-width: 290px !important;
+              }
+              span {
+                margin-right: 20px;
+              }
+            }
+            &.w430 {
+              max-width: 430px !important;
+              @media (max-width: 1100px) {
+                max-width: 430px !important;
+                span {
+                  margin-right: 20px;
+                }
+              }
+              @media (max-width: 767px) {
+                max-width: 250px !important;
               }
             }
             span {
@@ -1822,9 +1844,9 @@
           }
           &.w100 {
             p {
-              max-width: 740px;
+              max-width: 670px;
               @media (max-width: 1100px) {
-                max-width: 590px;
+                max-width: 630px;
               }
               @media (max-width: 767px) {
                 font-size: 12px;
@@ -1861,19 +1883,14 @@
                 }
               }
               &.w510 {
-                max-width: 510px;
+                max-width: 470px;
                 @media (max-width: 1100px) {
-                  max-width: 420px;
+                  max-width: 440px;
                 }
                 @media (max-width: 767px) {
                   max-width: 240px !important;
                 }
               }
-            }
-          }
-          &.w600 {
-            p {
-              max-width: 600px;
             }
           }
           &.w620 {
@@ -1883,19 +1900,82 @@
           }
           &.w680 {
             p {
-              max-width: 680px;
+              max-width: 580px !important;
+              @media (max-width: 1100px) {
+                max-width: 530px !important;
+              }
+              @media (max-width: 1100px) {
+                max-width: 320px !important;
+              }
               &.w640 {
                 max-width: 640px;
                 @media (max-width: 1100px) {
                   max-width: 520px;
                 }
               }
+              &.w520 {
+                max-width: 520px !important;
+                @media (max-width: 767px) {
+                  max-width: 320px !important;
+                }
+                span {
+                  margin-right: 50px;
+                }
+              }
             }
           }
+          &.w600 {
+            p {
+              max-width: 600px !important;
+              @media (max-width: 1100px) {
+                max-width: 560px !important;
+              }
+              @media (max-width: 767px) {
+                max-width: 320px !important;
+              }
+            }
+          }
+          &.w540 {
+            p {
+              max-width: 540px !important;
+              @media (max-width: 1100px) {
+                max-width: 530px !important;
+              }
+              @media (max-width: 767px) {
+                max-width: 290px !important;
+              }
+            }
+          }
+
+          &.w610 {
+            p {
+              max-width: 610px !important;
+              @media (max-width: 1100px) {
+                max-width: 580px !important;
+              }
+              @media (max-width: 767px) {
+                max-width: 320px !important;
+              }
+            }
+          }
+
           &.w460 {
             p {
               @media (max-width: 1100px) {
                 max-width: 480px;
+              }
+            }
+          }
+          &.w490 {
+            p {
+              @media (max-width: 1100px) {
+                max-width: 480px !important;
+                span {
+                  margin-right: 70px !important;
+                }
+              }
+              @media (max-width: 767px) {
+                max-width: 320px !important;
               }
             }
           }
